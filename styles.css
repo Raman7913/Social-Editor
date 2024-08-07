@@ -1,17 +1,80 @@
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: initial; /* or none */
+    background-color: initial; /*or transparent*/
+    color: initial;
+    font: inherit;
+    outline: none; /*make sure there is visual indicator for focus state*/
+}
+
+/* keyframes */
+@keyframes fade-in-from-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* base styles */
+.app {
+    font-family: "Times New Roman", Times, serif;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* styles */
 .header {
     background-image: linear-gradient(to right, #18a0be, #622db9);
+    display: flex;
+    height: 55px;
 }
 
 .logo {
+    align-self: center;
+    margin: 0 20px;
+    animation: fade-in-from-top 1s;
 }
 
 .dd-toggle {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    animation: fade-in-from-top 1s;
+}
+.dd-toggle:hover,
+.dd-toggle:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.07);
 }
 
+.dd-toggle:nth-of-type(4) {
+    margin-left: auto;
+}
+
+.dd-toggle:last-child {
+    display: flex;
+    align-items: center;
+}
 .dd-toggle__icon {
 }
 
 .dd-toggle__img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .dd-toggle__text {
