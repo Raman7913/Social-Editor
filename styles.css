@@ -32,6 +32,11 @@ button {
     font-size: 15px;
 }
 
+.app__container {
+    height: calc(100vh - 55px);
+    display: flex;
+}
+
 /* styles */
 .header {
     background-image: linear-gradient(to right, #18a0be, #622db9);
@@ -78,4 +83,25 @@ button {
 }
 
 .dd-toggle__text {
+}
+
+/* ------------------------------- */
+
+.sidebar {
+    background-color: #10171a;
+    flex-basis: 75px;
+}
+
+/* ------------------------------- */
+
+.panel {
+    background-color: #2b363c;
+    flex-basis: 250px;
+}
+
+/* ------------------------------- */
+
+.main {
+    background-color: #edf1f3;
+    flex: 1;
 }
