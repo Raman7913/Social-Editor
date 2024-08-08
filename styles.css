@@ -100,7 +100,9 @@ button {
 
 .sidebar {
     background-color: #10171a;
-    flex-basis: 75px;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
@@ -114,7 +116,7 @@ button {
     align-items: center;
     flex-direction: column;
     transition: all 0.5s;
-    animation: fade-in-from-left 0.5s;
+    animation: fade-in-from-left 0.4s;
 }
 
 .menu__button:hover,
@@ -149,6 +151,17 @@ button {
     font-size: 12px;
 }
 
+.footer {
+    margin-top: auto;
+    margin-bottom: 50px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 12px;
+}
 /* ------------------------------- */
 
 .panel {
